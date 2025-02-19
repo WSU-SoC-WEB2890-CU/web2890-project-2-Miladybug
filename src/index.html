@@ -1,28 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <title>WEB 2890 - Project 2</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index,follow">
-  <meta name="description" content="TODO: Project 2 ...">
-
-  <link rel="stylesheet" href="./stylesheets/main.scss">
+  <head-component></head-component>
 </head>
 
-<body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Project 2: A multiple-page project of your choosing.
-  </h1>
+<!--
+  TODO LIST
+  1.) Fix CSS lag issue
+  2.) Make portfolio nice, add links & pictures
+  3.) Change &ndash - 
+  4.) Use dark green more
+  5.) Add picture of Sariah
+  6.) Functional Form
+  7.) Peonies?
+  8.) Name logo font
+-->
 
+<body>
+  <header-component></header-component>
+
+  <main class="mt-0">
+    <section id="hero" class="jumbotron jumbotron-fluid text-light">
+      <h1>Writing. Editing. All things creative.</h1>
+      <h3>Your creativity and your story matter. I'm here to help you make your dreams happen.</h3>
+      <button class="btn btn-primary m-1 text-light">Services</button>
+    </section>
+
+    <section id="services-home" class="m-4 row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 d-flex justify-content-evenly g-3">
+      <div class="card p-4 bg-light">
+        <h2 class="card-title text-center">Editorial Services</h2>
+        <img src="./images/typewriter-edit.jpg" class="card-img-top" alt="A typewriter">
+        <p class="card-body p-0">I provide a variety of editing services to help you clean up your manuscript and move it toward publication.</p>
+      </div>
+      <div class="card p-4 bg-light">
+        <h2 class="card-title text-center">Creative Coaching</h2>
+        <img src="./images/palette.jpg" class="card-img-top" alt="a paint palette">
+        <p class="card-body p-0">Live your best creative life with my ideas, tips, tutorials, and guidance.</p>
+      </div>
+      <div class="card p-4 bg-light">
+        <h2 class="card-title text-center">Literary Love</h2>
+        <img src="./images/bookshelf.jpg" class="card-img-top" alt="a bookshelf of Jane Austen">
+        <p class="card-body p-0">From book reviews to grammar tips and writing advice, join me in my passion for all things books.</p>
+      </div>
+    </section>
+
+    <section id="about-contact-home" class="p-3 m-0 bg-primary text-light row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 d-flex justify-content-evenly">
+      <div>
+        <h2>About</h2>
+        <p>Sariah is a professional editor and writer. She is dedicated to spreading joy and creativity, and to helping you tell your story and live your dream.</p>
+      </div>
+      <div>
+        <h2>Get in Touch</h2>
+        <p>Reach out for a quote on my editing services, an editing sample, or to let me know how I can help you!</p>
+        <p>sariah.solomon@gmail.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer-component></footer-component>
+
+  <script src="https://kit.fontawesome.com/9a2446f617.js" crossorigin="anonymous"></script>
   <script type="module" src="./javascripts/main.js"></script>
 </body>
 </html>
