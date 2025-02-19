@@ -1,3 +1,128 @@
-/* Your styles go here */
+// Before import
+//main colors
+$off-white: #F3ECDD;
+$dark-rose: #BC8B84;
+//secondary colors
+$beige: #BC9B84;
+$pale-green: #848475;
+//accent colors
+$dark-green: #394A35;
+$brown: #554134;
+
+$primary: $dark-rose;
+$secondary: $pale-green;
+// $success
+// $danger
+// $warning
+// $info
+$light: $off-white;
+$dark: $brown;
+
+//fonts
+$heading-font: "Belleza", serif;;
+$body-font: "Alegreya", serif;
+$accent-font: "Charm", serif;
+
+
+// Import
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+// After Import
+html {
+    box-sizing: border-box;
+    font-family: $body-font;
+    font-size: 20px;
+}
+
+*, ::before, ::after{
+    box-sizing: inherit;
+}
+
+main {
+    margin: 0;
+    padding-top: 4.5rem;
+}
+.blog-post {
+    padding: 1rem;
+    padding-top: 5.5rem;
+    
+    li {
+        padding: .25rem;
+    }
+
+    img {
+        max-width: 20rem;
+    }
+
+    @media (min-width: 992px) {
+        padding: 4rem;
+        padding-top: 7rem;
+    }
+}
+.services-header{
+    padding-top: 5.5rem;
+    @media (min-width: 992px) {
+        padding-top: 7rem;
+    }
+}
+
+body {
+    background-color: $brown;
+    margin: 0rem;
+}
+
+h1, h2, h4 {
+    font-family: $heading-font;
+}
+
+h3 {
+    font-family: $accent-font;
+    font-size: 0.75;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+}
+a:hover {
+    color: $brown;
+}
+
+i {
+    color: $off-white;
+}
+
+#main-logo {
+    margin: 0.5rem 1rem;
+}
+
+img {
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
+p, ol>li {
+    font-size: 0.85rem;
+}
+.blockquote {
+    font-size: 0.92rem;
+    padding: 1rem;
+}
+
+#hero {
+    background-image: url("../images/open-austen.jpg");
+    background-size: cover;
+    padding: 2rem;
+}
+
+.card {
+    justify-content: space-around;
+
+    @include media-breakpoint-only(md) {
+        width: 47%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        width: 30%;
+    }
+}
