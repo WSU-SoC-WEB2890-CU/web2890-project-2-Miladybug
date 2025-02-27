@@ -1,34 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head-component></head-component>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sariah Solomon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Sariah Solomon's Editing Portfolio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Belleza&family=Charm:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheets/main.scss">
+</head>
 
 <body>
-  <header-component></header-component>
+  <header>
+    <!-- Add main header with title and image? -->
+    <nav class="navbar navbar-expand-lg bg-primary shadow fixed-top">
+      <a class="navbar-brand" id="main-logo" href="/index.html">
+        <i class="fa-solid fa-pen-nib"></i>
+        <span class="text-light">Sariah Solomon</span>
+      </a>
+      <button class="navbar-toggler m-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse bg-primary text-light pb-2" id="navbarNav">
+        <ul class="navbar-nav text-nowrap text-light">
+          <li class="nav-item px-3 mt-2">
+            <a class="nav-link text-light" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item px-3 mt-2">
+            <a class="nav-link text-light" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item px-3 mt-2">
+            <a class="nav-link text-light" href="/about.html">About</a>
+          </li>
+          <li class="nav-item px-3 mt-2">
+            <a class="nav-link text-light" href="/portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item px-3 mt-2">
+            <a class="nav-link text-light" href="/services.html">Services</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
   <!-- Note: add an image here. Professional headshot? -->
   <main class="bg-light blog-post">
     <h1 class="text-center display-1">About</h1>
-    <p>Hi there! I'm Sariah, and I am all about helping moms tune in to their creativity and tell their stories. Arts,
-      crafts, and writing are all passions of mine, and I believe that the innate desire to create is one of the most
-      divine characteristics we can be blessed with as women, as people, and as children of God. And that's where I come
-      in! I'm here to help guide you on your creative journey by offering ideas, advice, and, if your preferred medium
-      happens to be a pen or a typewriter, services! I am an experienced editor, and I would love to share my editorial
-      services with you! While I love all forms of creativity, writing holds a special place in my heart, and I would be
-      thrilled to work with you and help you tell your story.</p>
-    <p>I wrote my first book when I was in kindergarten. It was a messy little thing, with a purple cover and scribbled
-      illustrations of the Easter Bunny. But I vividly remember the pride I took in that silly little story, and I've
-      been
-      writing every since. I also worked my way through a variety of hobbies while growing up, eager to learn just about
-      anything I could. I practiced drawing, beading, crochet, knitting, sewing, cross-stitch, and more. In sixth grade
-      I
-      picked up a violin for the first time, and my creative yearnings found their voice in music for the first time.
-      While I now understand that my rapid-fire hobby seeking was likely related to undiagnosed ADHD, it was, and still
-      is, a defining characteristic of who I am. I recall venting my frustrations with my changing interests to a friend
-      once, explaining how much I wish I could just do everything, and he responded, “You're definitely Heavenly
-      Father's
-      daughter.” That simple statement changed my perspective, and I decided to embrace my calling as a
-      multipotentialite,
-      lifelong learner, jack-of-all-trades, whatever you want to call it.</p>
+    <div class="d-flex justify-content-between">
+      <img src="./images/headshot.jpg" class="m-2" alt="Headshot of Sariah">
+      <div class="m-2">
+        <p>Hi there! I'm Sariah, and I am all about helping moms tune in to their creativity and tell their stories. Arts,
+          crafts, and writing are all passions of mine, and I believe that the innate desire to create is one of the most
+          divine characteristics we can be blessed with as women, as people, and as children of God. And that's where I come
+          in! I'm here to help guide you on your creative journey by offering ideas, advice, and, if your preferred medium
+          happens to be a pen or a typewriter, services! I am an experienced editor, and I would love to share my editorial
+          services with you! While I love all forms of creativity, writing holds a special place in my heart, and I would be
+          thrilled to work with you and help you tell your story.</p>
+        <p>I wrote my first book when I was in kindergarten. It was a messy little thing, with a purple cover and scribbled
+          illustrations of the Easter Bunny. But I vividly remember the pride I took in that silly little story, and I've
+          been
+          writing every since. I also worked my way through a variety of hobbies while growing up, eager to learn just about
+          anything I could. I practiced drawing, beading, crochet, knitting, sewing, cross-stitch, and more. In sixth grade
+          I
+          picked up a violin for the first time, and my creative yearnings found their voice in music for the first time.
+          While I now understand that my rapid-fire hobby seeking was likely related to undiagnosed ADHD, it was, and still
+          is, a defining characteristic of who I am. I recall venting my frustrations with my changing interests to a friend
+          once, explaining how much I wish I could just do everything, and he responded, “You're definitely Heavenly
+          Father's
+          daughter.” That simple statement changed my perspective, and I decided to embrace my calling as a
+          multipotentialite,
+          lifelong learner, jack-of-all-trades, whatever you want to call it.</p>
+        </div>
+    </div>
     <p>Becoming a mom, and then a single mom, also created some defining shifts in who I am. My kids are my world, and I
       live for sharing the world with them. Reading to them and watching them look at the pictures has become one of my
       favorite things, and the more they grow, the more I enjoy sharing other creative and education pursuits with them.
@@ -72,7 +121,12 @@
     <p>What can I help you create?</p>
   </main>
 
-  <footer-component></footer-component>
+  <footer class="text-center bg-light text-dark p-2 m-0">
+    <p>
+      <span>&copy;</span><span>2025 All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of
+          Use</a></span>
+    </p>
+  </footer>
 
   <script src="https://kit.fontawesome.com/9a2446f617.js" crossorigin="anonymous"></script>
   <script type="module" src="./javascripts/main.js"></script>
